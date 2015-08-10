@@ -31,12 +31,12 @@
 // MARK - Settup
 
 - (void) setupView {
-    CGRect labelFrame = CGRectMake(10, 20, 120, 45);
+    CGRect labelFrame = CGRectMake(10, 70, 120, 45);
     CGFloat textFieldXCoor = labelFrame.size.width + 10;
     CGFloat textFieldWidth = self.view.frame.size.width - textFieldXCoor - 10;
-    CGRect textFieldFrame = CGRectMake(textFieldXCoor, 20, textFieldWidth, 45);
-    CGRect buttonFrame = CGRectMake(20, 70, 100, 45);
-    CGRect creditCardLabelFrame = CGRectMake(140, 70, 100, 45);
+    CGRect textFieldFrame = CGRectMake(textFieldXCoor, 70, textFieldWidth, 45);
+    CGRect buttonFrame = CGRectMake(20, 120, 100, 45);
+    CGRect creditCardLabelFrame = CGRectMake(140, 20, 300, 45);
 
     UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
     label.text = @"Card Number: ";
@@ -56,9 +56,8 @@
     [self.view addSubview:_button];
 
     _creditCardLabel = [[UILabel alloc] initWithFrame:creditCardLabelFrame];
-    label.text = @"Card Number: ";
-    [self.view addSubview:label];
-    label.textColor = [UIColor whiteColor];
+    [self.view addSubview:_creditCardLabel];
+    _creditCardLabel.textColor = [UIColor whiteColor];
 }
 
 // MARK - Actions
@@ -80,6 +79,27 @@
 // MARK - UITextFieldDelegate methods
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    if(_textfield.text.length > 0) {
+        NSString *firstNumber = [NSString stringWithFormat:@"%C", [_textfield.text characterAtIndex:0]];
+
+        if([firstNumber  isEqual: @"4"]){
+            _creditCardLabel.text = @"VISA";
+
+        } else if([firstNumber  isEqual: @"5"]) {
+            _creditCardLabel.text = @"MASTER CARD";
+
+        } else if([firstNumber  isEqual: @"3"]) {
+            _creditCardLabel.text = @"AMERICAN EXPRESS";
+
+        } else if([firstNumber  isEqual: @"6"]) {
+            _creditCardLabel.text = @"DISCOVER";
+
+        } else {
+            _creditCardLabel.text = @"";
+
+        }
+    }
+
     if([self isAllDigits: string]){
         return true;
     } else {
