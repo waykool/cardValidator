@@ -10,7 +10,6 @@
 		12DA960A1B784F250057D055 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DA96091B784F250057D055 /* main.m */; };
 		12DA960D1B784F250057D055 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DA960C1B784F250057D055 /* AppDelegate.m */; };
 		12DA96101B784F250057D055 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DA960F1B784F250057D055 /* ViewController.m */; };
-		12DA96131B784F250057D055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12DA96111B784F250057D055 /* Main.storyboard */; };
 		12DA96151B784F250057D055 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12DA96141B784F250057D055 /* Images.xcassets */; };
 		12DA96181B784F250057D055 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12DA96161B784F250057D055 /* LaunchScreen.xib */; };
 		12DA96241B784F260057D055 /* SimpleCardValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DA96231B784F260057D055 /* SimpleCardValidatorTests.m */; };
@@ -34,7 +33,6 @@
 		12DA960C1B784F250057D055 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		12DA960E1B784F250057D055 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		12DA960F1B784F250057D055 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		12DA96121B784F250057D055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12DA96141B784F250057D055 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		12DA96171B784F250057D055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		12DA961D1B784F260057D055 /* SimpleCardValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleCardValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +83,6 @@
 				12DA960C1B784F250057D055 /* AppDelegate.m */,
 				12DA960E1B784F250057D055 /* ViewController.h */,
 				12DA960F1B784F250057D055 /* ViewController.m */,
-				12DA96111B784F250057D055 /* Main.storyboard */,
 				12DA96141B784F250057D055 /* Images.xcassets */,
 				12DA96161B784F250057D055 /* LaunchScreen.xib */,
 				12DA96071B784F250057D055 /* Supporting Files */,
@@ -199,7 +196,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12DA96131B784F250057D055 /* Main.storyboard in Resources */,
 				12DA96181B784F250057D055 /* LaunchScreen.xib in Resources */,
 				12DA96151B784F250057D055 /* Images.xcassets in Resources */,
 			);
@@ -244,14 +240,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		12DA96111B784F250057D055 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				12DA96121B784F250057D055 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		12DA96161B784F250057D055 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
